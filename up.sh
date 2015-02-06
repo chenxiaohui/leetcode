@@ -19,6 +19,7 @@
 
 set -o nounset                              # Treat unset variables as an error
 
+make clean
 git add .
 git cam "modify `date +%Y%m%d`"
 git push origin
