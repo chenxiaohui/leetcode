@@ -1,3 +1,4 @@
+
 #include "common.h"
 class Solution {
 public:
@@ -21,16 +22,19 @@ public:
         }
         return i;
     }
-};
-int main(int argc, const char *argv[])
+}s;
+
+TEST(RemoveElement, TestRemove)
 {
   int a[] = {1,2,2,3};
-  Solution d;
-  copy(a, a + d.removeElement(a, 4, 2), ostream_iterator<int>(cout, " "));
-  int b[] = {2,2,2,2};
-  cout << d.removeElement(b, 4, 2);
-  int c[] = {};
-  cout << d.removeElement(b, 0, 2);
-  //copy(b, b + d.removeElement(b, 4, 2), ostream_iterator<int>(cout, " "));
-  return 0;
+  EXPECT_EQ(2, s.removeElement(a, 4, 2));
+  EXPECT_EQ(1, a[0]);
+  EXPECT_EQ(3, a[1]);
 }
+
+TEST(RemoveElement, TestRemove2)
+{
+  int a[] = {2,2,2,2};
+  EXPECT_EQ(0, s.removeElement(a, 4, 2));
+}
+
