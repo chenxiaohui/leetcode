@@ -6,6 +6,7 @@ CXXFLAGS += -g -Wall -Wextra -pthread
 
 all : RemoveElement
 all : SameTree
+all : SingleNumber
 
 RemoveElement:
 RemoveElement : RemoveElement.o
@@ -13,7 +14,11 @@ RemoveElement : RemoveElement.o
 SameTree:
 SameTree : SameTree.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+SingleNumber:
+SingleNumber : SingleNumber.o
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 .PHONY:clean
 clean:
 	-rm -f RemoveElement.o RemoveElement
 	-rm -f SameTree.o SameTree
+	-rm -f SingleNumber.o SingleNumber
