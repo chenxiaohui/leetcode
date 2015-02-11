@@ -4,10 +4,15 @@ CPPFLAGS += -isystem $(GTEST_DIR)/include
 
 CXXFLAGS += -g -Wall -Wextra -pthread
 
+all : ExShuiWang
 all : RemoveElement
 all : SameTree
 all : SingleNumber
+all : SingleNumberII
 
+ExShuiWang:
+ExShuiWang : ExShuiWang.o
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 RemoveElement:
 RemoveElement : RemoveElement.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
@@ -17,8 +22,13 @@ SameTree : SameTree.o
 SingleNumber:
 SingleNumber : SingleNumber.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+SingleNumberII:
+SingleNumberII : SingleNumberII.o
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 .PHONY:clean
 clean:
+	-rm -f ExShuiWang.o ExShuiWang
 	-rm -f RemoveElement.o RemoveElement
 	-rm -f SameTree.o SameTree
 	-rm -f SingleNumber.o SingleNumber
+	-rm -f SingleNumberII.o SingleNumberII
