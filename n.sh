@@ -22,20 +22,24 @@ set -o nounset                              # Treat unset variables as an error
 echo "input your leetcode problem title: "
 read title
 echo "copy description to clipboard: "
-read 
+read
 desc=`xclip -o -selection clipboard`
+echo "copy note to clipboard: "
+read
+note=`xclip -o -selection clipboard`
 
 filename=`echo $title|tr -d ' '`
 echo '/*' > $filename.cpp
 echo " * " $desc >> $filename.cpp
+echo " * Note:" $note >> $filename.cpp
 echo ' */' >> $filename.cpp
 echo '#include "common.h"
 
 class Solution {
 public:
 
-}s;
-
+};
+Solution s;
 ' >> $filename.cpp
 
 echo "### 总结
