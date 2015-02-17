@@ -1,7 +1,7 @@
 /*
  *  统计结果表明，有3个发帖很多的ID，他们的发帖数目都超过了帖子总数目N的1/4。你能从发帖ID列表中快速找出他们的ID吗？
  */
-#include "common.h"
+#include "../common.h"
 
 class Solution {
     public:

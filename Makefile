@@ -4,14 +4,14 @@ CPPFLAGS += -isystem $(GTEST_DIR)/include
 
 CXXFLAGS += -g -Wall -Wextra -pthread
 
-all : ExShuiWang
+all : MaximumDepthofBinaryTree
 all : RemoveElement
 all : SameTree
 all : SingleNumber
 all : SingleNumberII
 
-ExShuiWang:
-ExShuiWang : ExShuiWang.o
+MaximumDepthofBinaryTree:
+MaximumDepthofBinaryTree : MaximumDepthofBinaryTree.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 RemoveElement:
 RemoveElement : RemoveElement.o
@@ -27,7 +27,7 @@ SingleNumberII : SingleNumberII.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 .PHONY:clean
 clean:
-	-rm -f ExShuiWang.o ExShuiWang
+	-rm -f MaximumDepthofBinaryTree.o MaximumDepthofBinaryTree
 	-rm -f RemoveElement.o RemoveElement
 	-rm -f SameTree.o SameTree
 	-rm -f SingleNumber.o SingleNumber

@@ -20,7 +20,8 @@
 set -o nounset                              # Treat unset variables as an error
 
 echo "input your leetcode problem title: "
-read title
+read 
+title=`xclip -o -selection clipboard`
 echo "copy description to clipboard: "
 read
 desc=`xclip -o -selection clipboard`
