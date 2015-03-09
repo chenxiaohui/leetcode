@@ -13,4 +13,3 @@
 
   今天看到一个random的题：http://bbs.byr.cn/#!article/ACM_ICPC/81836
   还有另一个http://sumnous.github.io/blog/2014/05/13/random-pick-function/
-  

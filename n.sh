@@ -19,15 +19,15 @@
 
 set -o nounset                              # Treat unset variables as an error
 
-echo "input your leetcode problem title: "
-read 
-title=`xclip -o -selection clipboard`
+echo "copy your leetcode problem title: "
+read title
+[ -z $title ] && title=`xclip -o -selection clipboard`
 echo "copy description to clipboard: "
-read
-desc=`xclip -o -selection clipboard`
+read desc
+[ -z $desc ] && desc=`xclip -o -selection clipboard`
 echo "copy note to clipboard: "
-read
-note=`xclip -o -selection clipboard`
+read note
+[ -z $note ] && note=`xclip -o -selection clipboard`
 
 filename=`echo $title|tr -d ' '`
 echo '/*' > $filename.cpp

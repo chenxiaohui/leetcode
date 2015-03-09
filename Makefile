@@ -9,6 +9,7 @@ all : RemoveElement
 all : SameTree
 all : SingleNumber
 all : SingleNumberII
+all : ValidParentheses
 
 MaximumDepthofBinaryTree:
 MaximumDepthofBinaryTree : MaximumDepthofBinaryTree.o
@@ -25,6 +26,9 @@ SingleNumber : SingleNumber.o
 SingleNumberII:
 SingleNumberII : SingleNumberII.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+ValidParentheses:
+ValidParentheses : ValidParentheses.o
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 .PHONY:clean
 clean:
 	-rm -f MaximumDepthofBinaryTree.o MaximumDepthofBinaryTree
@@ -32,3 +36,4 @@ clean:
 	-rm -f SameTree.o SameTree
 	-rm -f SingleNumber.o SingleNumber
 	-rm -f SingleNumberII.o SingleNumberII
+	-rm -f ValidParentheses.o ValidParentheses
