@@ -20,6 +20,7 @@
 set -o nounset                              # Treat unset variables as an error
 
 make clean
+make -C ex clean
 git add .
 git cam "modify `date +%Y%m%d`"
 git push origin
