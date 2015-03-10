@@ -4,4 +4,6 @@ RemoveElement
 SameTree
 SingleNumber
 SingleNumberII
+Sqrt
+strStr
 ValidParentheses

@@ -9,6 +9,8 @@ all : RemoveElement
 all : SameTree
 all : SingleNumber
 all : SingleNumberII
+all : Sqrt
+all : strStr
 all : ValidParentheses
 
 MaximumDepthofBinaryTree:
@@ -26,6 +28,12 @@ SingleNumber : SingleNumber.o
 SingleNumberII:
 SingleNumberII : SingleNumberII.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+Sqrt:
+Sqrt : Sqrt.o
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+strStr:
+strStr : strStr.o
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 ValidParentheses:
 ValidParentheses : ValidParentheses.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
@@ -36,4 +44,6 @@ clean:
 	-rm -f SameTree.o SameTree
 	-rm -f SingleNumber.o SingleNumber
 	-rm -f SingleNumberII.o SingleNumberII
+	-rm -f Sqrt.o Sqrt
+	-rm -f strStr.o strStr
 	-rm -f ValidParentheses.o ValidParentheses
