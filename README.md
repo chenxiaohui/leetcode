@@ -1,4 +1,5 @@
 My Leetcode answers: 
+BinarySearch
 MaximumDepthofBinaryTree
 RemoveElement
 SameTree

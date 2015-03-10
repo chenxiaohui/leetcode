@@ -4,6 +4,7 @@ CPPFLAGS += -isystem $(GTEST_DIR)/include
 
 CXXFLAGS += -g -Wall -Wextra -pthread
 
+all : BinarySearch
 all : MaximumDepthofBinaryTree
 all : RemoveElement
 all : SameTree
@@ -13,6 +14,9 @@ all : Sqrt
 all : strStr
 all : ValidParentheses
 
+BinarySearch:
+BinarySearch : BinarySearch.o
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 MaximumDepthofBinaryTree:
 MaximumDepthofBinaryTree : MaximumDepthofBinaryTree.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
@@ -39,6 +43,7 @@ ValidParentheses : ValidParentheses.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 .PHONY:clean
 clean:
+	-rm -f BinarySearch.o BinarySearch
 	-rm -f MaximumDepthofBinaryTree.o MaximumDepthofBinaryTree
 	-rm -f RemoveElement.o RemoveElement
 	-rm -f SameTree.o SameTree
