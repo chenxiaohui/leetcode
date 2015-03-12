@@ -8,31 +8,34 @@ class Solution {
 public:
   int binarySearch(vector<int> &array, int target) {
         int ret = -1;
-        if (array.size() > 0)
-        {
+        // write your code here
+        if (array.size() > 0){
             int low = 0;
             int high = array.size() - 1;
             int mid = 0;
-            while(low <= high)
-            {
-                mid = low + (high - low)/2;
-                if (array[mid] > target){
-                    high = mid - 1;
-                }else (array[mid] < target){
-                    low = mid + 1;
+            while (low + 1 < high){
+                mid = low + (high - low) / 2;
+                if (array[mid] == target) {
+                    high = mid;
+                }else if (array[mid] < target){
+                    low = mid;
                 }else{
-                    ret = mid;
-                    break;
+                    high = mid;
                 }
             }
+            if (array[low] == target){
+                ret = low;
+            }else if (array[high] == target){
+                ret = high;
+            }
         }
-        // write your code here
         return ret;
     }};
 Solution s;
 TEST(BinarySearch, normal)
 {
-    vector<int> array = {1, 2,3,3,4,5,10};
+    int arr[] = {1,2,3,3,4,5,10};
+    vector<int> array(arr, arr + sizeof(arr)/sizeof(int));
     EXPECT_EQ(2, s.binarySearch(array, 3));
 }
 TEST(BinarySearch, abnormal)
@@ -43,3 +46,9 @@ TEST(BinarySearch, abnormal)
     EXPECT_EQ(-1, s.binarySearch(array, 2));
 }
 
+TEST(BinarySearch, equals)
+{
+    int arr[] = {1,1,1,1};
+    vector<int> array(arr, arr + sizeof(arr)/sizeof(int));
+    EXPECT_EQ(0, s.binarySearch(array, 1));
+}
