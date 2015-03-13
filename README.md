@@ -5,6 +5,6 @@ RemoveElement
 SameTree
 SingleNumber
 SingleNumberII
-Sqrt
 strStr
+UniqueSubsets
 ValidParentheses
