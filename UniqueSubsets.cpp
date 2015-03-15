@@ -12,7 +12,7 @@ public:
         sort(elements.begin(), elements.end());
         if (!S.empty()) {
             vector<int> subset;
-            subsetsHelper(outVector, subset, S, 0);
+            subsetsHelper(outVector, subset, elements, 0);
         }
         return outVector;
     }
@@ -29,7 +29,7 @@ public:
    }
 };
 Solution s;
-TEST(UniqueSubsets, )
+TEST(UniqueSubsets, testnormal)
 {
     int elementsArr[] = {4,4,1,4};
     vector<int> elements(elementsArr, elementsArr + sizeof(elementsArr)/sizeof(int));

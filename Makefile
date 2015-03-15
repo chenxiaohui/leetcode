@@ -6,6 +6,7 @@ CXXFLAGS += -g -Wall -Wextra -pthread
 
 all : BinarySearch
 all : MaximumDepthofBinaryTree
+all : Permutations
 all : RemoveElement
 all : SameTree
 all : SingleNumber
@@ -19,6 +20,9 @@ BinarySearch : BinarySearch.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 MaximumDepthofBinaryTree:
 MaximumDepthofBinaryTree : MaximumDepthofBinaryTree.o
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+Permutations:
+Permutations : Permutations.o
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 RemoveElement:
 RemoveElement : RemoveElement.o
@@ -45,6 +49,7 @@ ValidParentheses : ValidParentheses.o
 clean:
 	-rm -f BinarySearch.o BinarySearch
 	-rm -f MaximumDepthofBinaryTree.o MaximumDepthofBinaryTree
+	-rm -f Permutations.o Permutations
 	-rm -f RemoveElement.o RemoveElement
 	-rm -f SameTree.o SameTree
 	-rm -f SingleNumber.o SingleNumber

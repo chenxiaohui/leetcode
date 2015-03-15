@@ -1,6 +1,7 @@
 My Leetcode answers: 
 BinarySearch
 MaximumDepthofBinaryTree
+Permutations
 RemoveElement
 SameTree
 SingleNumber
