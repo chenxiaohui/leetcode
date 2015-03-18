@@ -27,16 +27,19 @@ echo "" >> Makefile
 echo 'CXXFLAGS += -g -Wall -Wextra -pthread' >> Makefile
 echo "" >> Makefile
 
+echo -n "all: " >>Makefile
 for fname in *.cpp; do
     realname=${fname%.*}
-    echo "all : $realname" >>Makefile
+    echo -n "$realname " >>Makefile
 done
+
+echo "" >>Makefile
+echo ".PHONY:all" >>Makefile
 
 echo >> Makefile
 for fname in *.cpp; do
     realname=${fname%.*}
-    echo "$realname:
-$realname : ${realname}.o" >> Makefile
+    echo "$realname : $fname common.h" >> Makefile
     echo -e "\t"'$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@' >>Makefile
 done
 

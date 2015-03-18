@@ -57,5 +57,5 @@ echo "### 总结
 ">md/$filename.md
 ./gen.sh
 
-vi $filename.cpp
 LD_PRELOAD=~/repo/scripts/libsublime-imfix.so nohup ~/share/sublime/sublime_text md/$filename.md > /dev/null 2>&1 &
+vi $filename.cpp

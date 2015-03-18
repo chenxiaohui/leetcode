@@ -4,6 +4,8 @@ MaximumDepthofBinaryTree
 Permutations
 RemoveElement
 SameTree
+SearchforaRange
+SearchInsertPosition
 SingleNumber
 SingleNumberII
 strStr
