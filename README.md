@@ -5,9 +5,12 @@ Permutations
 RemoveElement
 SameTree
 SearchforaRange
+SearchinRotatedSortedArray
+SearchinRotatedSortedArrayII
 SearchInsertPosition
 SingleNumber
 SingleNumberII
 strStr
+test
 UniqueSubsets
 ValidParentheses

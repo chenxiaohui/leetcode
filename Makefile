@@ -4,7 +4,7 @@ CPPFLAGS += -isystem $(GTEST_DIR)/include
 
 CXXFLAGS += -g -Wall -Wextra -pthread
 
-all: BinarySearch MaximumDepthofBinaryTree Permutations RemoveElement SameTree SearchforaRange SearchInsertPosition SingleNumber SingleNumberII strStr UniqueSubsets ValidParentheses 
+all: BinarySearch MaximumDepthofBinaryTree Permutations RemoveElement SameTree SearchforaRange SearchinRotatedSortedArray SearchinRotatedSortedArrayII SearchInsertPosition SingleNumber SingleNumberII strStr test UniqueSubsets ValidParentheses 
 .PHONY:all
 
 BinarySearch : BinarySearch.cpp common.h
@@ -19,6 +19,10 @@ SameTree : SameTree.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 SearchforaRange : SearchforaRange.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+SearchinRotatedSortedArray : SearchinRotatedSortedArray.cpp common.h
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+SearchinRotatedSortedArrayII : SearchinRotatedSortedArrayII.cpp common.h
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 SearchInsertPosition : SearchInsertPosition.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 SingleNumber : SingleNumber.cpp common.h
@@ -26,6 +30,8 @@ SingleNumber : SingleNumber.cpp common.h
 SingleNumberII : SingleNumberII.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 strStr : strStr.cpp common.h
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
+test : test.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 UniqueSubsets : UniqueSubsets.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
@@ -39,9 +45,12 @@ clean:
 	-rm -f RemoveElement.o RemoveElement
 	-rm -f SameTree.o SameTree
 	-rm -f SearchforaRange.o SearchforaRange
+	-rm -f SearchinRotatedSortedArray.o SearchinRotatedSortedArray
+	-rm -f SearchinRotatedSortedArrayII.o SearchinRotatedSortedArrayII
 	-rm -f SearchInsertPosition.o SearchInsertPosition
 	-rm -f SingleNumber.o SingleNumber
 	-rm -f SingleNumberII.o SingleNumberII
 	-rm -f strStr.o strStr
+	-rm -f test.o test
 	-rm -f UniqueSubsets.o UniqueSubsets
 	-rm -f ValidParentheses.o ValidParentheses
