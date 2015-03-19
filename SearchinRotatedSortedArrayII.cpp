@@ -13,7 +13,7 @@ public:
           int high = A.size() - 1;
           while (low + 1 < high) {
             int mid = low + (high - low) / 2;
-            if (A[mid] >= A[low]) {
+            if (A[mid] > A[low]) {
               if (target < A[mid] && target > A[low]) {
                 high = mid;
               } else if (target == A[mid] || target == A[low]) {
@@ -26,6 +26,9 @@ public:
               if (target > A[mid] && target < A[low]) {
                 low = mid;
               } else if (target == A[mid] || target == A[low]) {
+                found = true;
+                break;
+              } else if (A[mid] == target) {
                 found = true;
                 break;
               } else {
