@@ -24,4 +24,4 @@ public:
 Solution s;
 
 TEST(ZigZagConversion, normal) {
-} 
+}
