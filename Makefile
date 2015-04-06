@@ -4,9 +4,11 @@ CPPFLAGS += -isystem $(GTEST_DIR)/include
 
 CXXFLAGS += -g -Wall -Wextra -pthread
 
-all: BinarySearch MaximumDepthofBinaryTree Permutations RemoveElement SameTree SearchforaRange SearchinRotatedSortedArray SearchinRotatedSortedArrayII SearchInsertPosition SingleNumber SingleNumberII strStr test UniqueSubsets ValidParentheses 
+all: BestTimetoBuyandSellStockIV BinarySearch MaximumDepthofBinaryTree Permutations RemoveElement SameTree SearchforaRange SearchinRotatedSortedArray SearchinRotatedSortedArrayII SearchInsertPosition SingleNumber SingleNumberII strStr test UniqueSubsets ValidParentheses 
 .PHONY:all
 
+BestTimetoBuyandSellStockIV : BestTimetoBuyandSellStockIV.cpp common.h
+	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 BinarySearch : BinarySearch.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 MaximumDepthofBinaryTree : MaximumDepthofBinaryTree.cpp common.h
@@ -39,6 +41,7 @@ ValidParentheses : ValidParentheses.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $^ -o $@
 .PHONY:clean
 clean:
+	-rm -f BestTimetoBuyandSellStockIV.o BestTimetoBuyandSellStockIV
 	-rm -f BinarySearch.o BinarySearch
 	-rm -f MaximumDepthofBinaryTree.o MaximumDepthofBinaryTree
 	-rm -f Permutations.o Permutations

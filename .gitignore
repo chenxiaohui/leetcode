@@ -1,5 +1,5 @@
-*.o
-*.swp
-make.err
-README.md
-Makefile
+*
+!*.md
+!*.h
+!*.cpp
+!*.sh
