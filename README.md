@@ -1,16 +1,2 @@
 My Leetcode answers: 
-BestTimetoBuyandSellStockIV
-BinarySearch
-MaximumDepthofBinaryTree
-Permutations
-RemoveElement
-SameTree
-SearchInsertPosition
-SearchforaRange
-SearchinRotatedSortedArray
 SearchinRotatedSortedArrayII
-SingleNumber
-SingleNumberII
-UniqueSubsets
-ValidParentheses
-strStr
