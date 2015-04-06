@@ -36,17 +36,17 @@ strStr : strStr.cpp common.h
 
 .PHONY:clean
 clean:
-	-rm -f BinarySearch.o BinarySearch
-	-rm -f MaximumDepthofBinaryTree.o MaximumDepthofBinaryTree
-	-rm -f Permutations.o Permutations
-	-rm -f RemoveElement.o RemoveElement
-	-rm -f SameTree.o SameTree
-	-rm -f SearchInsertPosition.o SearchInsertPosition
-	-rm -f SearchforaRange.o SearchforaRange
-	-rm -f SearchinRotatedSortedArray.o SearchinRotatedSortedArray
-	-rm -f SearchinRotatedSortedArrayII.o SearchinRotatedSortedArrayII
-	-rm -f SingleNumber.o SingleNumber
-	-rm -f SingleNumberII.o SingleNumberII
-	-rm -f UniqueSubsets.o UniqueSubsets
-	-rm -f ValidParentheses.o ValidParentheses
-	-rm -f strStr.o strStr
+	-rm -rf BinarySearch.o BinarySearch BinarySearch.dSYM 
+	-rm -rf MaximumDepthofBinaryTree.o MaximumDepthofBinaryTree MaximumDepthofBinaryTree.dSYM 
+	-rm -rf Permutations.o Permutations Permutations.dSYM 
+	-rm -rf RemoveElement.o RemoveElement RemoveElement.dSYM 
+	-rm -rf SameTree.o SameTree SameTree.dSYM 
+	-rm -rf SearchInsertPosition.o SearchInsertPosition SearchInsertPosition.dSYM 
+	-rm -rf SearchforaRange.o SearchforaRange SearchforaRange.dSYM 
+	-rm -rf SearchinRotatedSortedArray.o SearchinRotatedSortedArray SearchinRotatedSortedArray.dSYM 
+	-rm -rf SearchinRotatedSortedArrayII.o SearchinRotatedSortedArrayII SearchinRotatedSortedArrayII.dSYM 
+	-rm -rf SingleNumber.o SingleNumber SingleNumber.dSYM 
+	-rm -rf SingleNumberII.o SingleNumberII SingleNumberII.dSYM 
+	-rm -rf UniqueSubsets.o UniqueSubsets UniqueSubsets.dSYM 
+	-rm -rf ValidParentheses.o ValidParentheses ValidParentheses.dSYM 
+	-rm -rf strStr.o strStr strStr.dSYM 

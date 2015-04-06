@@ -47,7 +47,7 @@ clean:" >> Makefile
 
 for fname in *.cpp; do
     realname=${fname%.*}
-    echo -e "\t-rm -f ${realname}.o $realname" >> Makefile
+    echo -e "\t-rm -rf ${realname}.o $realname ${realname}.dSYM " >> Makefile
 done
 
 echo "My Leetcode answers: " > README.md

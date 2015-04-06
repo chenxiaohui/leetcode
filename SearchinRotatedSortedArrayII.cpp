@@ -28,12 +28,14 @@ public:
               } else if (target == A[mid] || target == A[low]) {
                 found = true;
                 break;
-              } else if (A[mid] == target) {
-                found = true;
-                break;
               } else {
                 high = mid;
               }
+            } else if (A[mid] == target) {
+              found = true;
+              break;
+            } else {
+              low = mid;
             }
           }
           if (A[low] == target || A[high] == target) {

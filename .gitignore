@@ -1,5 +1,4 @@
 *.o
+*.dSYM
 *.swp
 make.err
-README.md
-Makefile
