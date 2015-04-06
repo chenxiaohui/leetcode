@@ -2,14 +2,14 @@
 
 CXXFLAGS += -isystem $(GTEST_DIR)/include -g -Wall -Wextra -pthread
 
-all: bin/3SumClosest bin/3Sum bin/4Sum bin/AddBinary bin/AddTwoNumbers bin/Anagrams bin/BalancedBinaryTree bin/BestTimetoBuyandSellStock bin/BestTimetoBuyandSellStockII bin/BestTimetoBuyandSellStockIII bin/BestTimetoBuyandSellStockIV bin/BinarySearchTreeIterator bin/BinaryTreeInorderTraversal bin/BinaryTreeLevelOrderTraversal bin/BinaryTreeLevelOrderTraversalII bin/BinaryTreeMaximumPathSum bin/BinaryTreePostorderTraversal bin/BinaryTreePreorderTraversal bin/BinaryTreeZigzagLevelOrderTraversal bin/Candy bin/ClimbingStairs bin/CloneGraph bin/Combinations bin/CombinationSum bin/CombinationSumII bin/CompareVersionNumbers bin/ConstructBinaryTreefromInorderandPostorderTraversal bin/ConstructBinaryTreefromPreorderandInorderTraversal bin/ContainerWithMostWater bin/ConvertSortedArraytoBinarySearchTree bin/ConvertSortedListtoBinarySearchTree bin/CopyListwithRandomPointer bin/CountandSay bin/DecodeWays bin/DistinctSubsequences bin/DivideTwoIntegers bin/EditDistance bin/EvaluateReversePolishNotation bin/ExcelSheetColumnNumber bin/ExcelSheetColumnTitle bin/FactorialTrailingZeroes bin/FindMinimuminRotatedSortedArray bin/FindMinimuminRotatedSortedArrayII bin/FindPeakElement bin/FirstMissingPositive bin/FlattenBinaryTreetoLinkedList bin/FractiontoRecurringDecimal bin/GasStation bin/GenerateParentheses bin/GrayCode bin/ImplementstrStr bin/InsertInterval bin/InsertionSortList bin/IntegertoRoman bin/InterleavingString bin/IntersectionofTwoLinkedLists bin/JumpGame bin/JumpGameII bin/LargestNumber bin/LargestRectangleinHistogram bin/LengthofLastWord bin/LetterCombinationsofaPhoneNumber bin/LinkedListCycle bin/LinkedListCycleII bin/LongestCommonPrefix bin/LongestConsecutiveSequence bin/LongestPalindromicSubstring bin/LongestSubstringWithoutRepeatingCharacters bin/LongestValidParentheses bin/LRUCache bin/MajorityElement bin/MaximalRectangle bin/MaximumDepthofBinaryTree bin/MaximumGap bin/MaximumProductSubarray bin/MaximumSubarray bin/MaxPointsonaLine bin/MedianofTwoSortedArrays bin/MergeIntervals bin/MergekSortedLists bin/MergeSortedArray bin/MergeTwoSortedLists bin/MinimumDepthofBinaryTree bin/MinimumPathSum bin/MinimumWindowSubstring bin/MinStack bin/MultiplyStrings bin/NextPermutation bin/N-Queens bin/N-QueensII bin/Numberof1Bits bin/PalindromeNumber bin/PalindromePartitioning bin/PalindromePartitioningII bin/PartitionList bin/PascalTriangle bin/PascalTriangleII bin/PathSum bin/PathSumII bin/Permutations bin/PermutationSequence bin/PermutationsII bin/PlusOne bin/PopulatingNextRightPointersinEachNode bin/PopulatingNextRightPointersinEachNodeII bin/Powxn bin/RecoverBinarySearchTree bin/RegularExpressionMatching bin/RemoveDuplicatesfromSortedArray bin/RemoveDuplicatesfromSortedArrayII bin/RemoveDuplicatesfromSortedList bin/RemoveDuplicatesfromSortedListII bin/RemoveElement bin/RemoveNthNodeFromEndofList bin/ReorderList bin/RepeatedDNASequences bin/RestoreIPAddresses bin/ReverseBits bin/ReverseInteger bin/ReverseLinkedListII bin/ReverseNodesink-Group bin/ReverseWordsinaString bin/RomantoInteger bin/RotateArray bin/RotateImage bin/RotateList bin/SameTree bin/ScrambleString bin/Searcha2DMatrix bin/SearchforaRange bin/SearchinRotatedSortedArray bin/SearchinRotatedSortedArrayII bin/SearchInsertPosition bin/SetMatrixZeroes bin/SimplifyPath bin/SingleNumber bin/SingleNumberII bin/SortColors bin/SortList bin/SpiralMatrix bin/SpiralMatrixII bin/Sqrtx bin/StringtoInteger_atoi bin/Subsets bin/SubsetsII bin/SubstringwithConcatenationofAllWords bin/SudokuSolver bin/SumRoottoLeafNumbers bin/SurroundedRegions bin/SwapNodesinPairs bin/SymmetricTree bin/TextJustification bin/TrappingRainWater bin/Triangle bin/TwoSum bin/UniqueBinarySearchTrees bin/UniqueBinarySearchTreesII bin/UniquePaths bin/UniquePathsII bin/ValidateBinarySearchTree bin/ValidNumber bin/ValidPalindrome bin/ValidParentheses bin/ValidSudoku bin/WildcardMatching bin/WordBreak bin/WordBreakII bin/WordLadder bin/WordLadderII bin/WordSearch bin/ZigZagConversion 
+all: bin/3Sum bin/3SumClosest bin/4Sum bin/AddBinary bin/AddTwoNumbers bin/Anagrams bin/BalancedBinaryTree bin/BestTimetoBuyandSellStock bin/BestTimetoBuyandSellStockII bin/BestTimetoBuyandSellStockIII bin/BestTimetoBuyandSellStockIV bin/BinarySearchTreeIterator bin/BinaryTreeInorderTraversal bin/BinaryTreeLevelOrderTraversal bin/BinaryTreeLevelOrderTraversalII bin/BinaryTreeMaximumPathSum bin/BinaryTreePostorderTraversal bin/BinaryTreePreorderTraversal bin/BinaryTreeZigzagLevelOrderTraversal bin/Candy bin/ClimbingStairs bin/CloneGraph bin/CombinationSum bin/CombinationSumII bin/Combinations bin/CompareVersionNumbers bin/ConstructBinaryTreefromInorderandPostorderTraversal bin/ConstructBinaryTreefromPreorderandInorderTraversal bin/ContainerWithMostWater bin/ConvertSortedArraytoBinarySearchTree bin/ConvertSortedListtoBinarySearchTree bin/CopyListwithRandomPointer bin/CountandSay bin/DecodeWays bin/DistinctSubsequences bin/DivideTwoIntegers bin/EditDistance bin/EvaluateReversePolishNotation bin/ExcelSheetColumnNumber bin/ExcelSheetColumnTitle bin/FactorialTrailingZeroes bin/FindMinimuminRotatedSortedArray bin/FindMinimuminRotatedSortedArrayII bin/FindPeakElement bin/FirstMissingPositive bin/FlattenBinaryTreetoLinkedList bin/FractiontoRecurringDecimal bin/GasStation bin/GenerateParentheses bin/GrayCode bin/ImplementstrStr bin/InsertInterval bin/InsertionSortList bin/IntegertoRoman bin/InterleavingString bin/IntersectionofTwoLinkedLists bin/JumpGame bin/JumpGameII bin/LRUCache bin/LargestNumber bin/LargestRectangleinHistogram bin/LengthofLastWord bin/LetterCombinationsofaPhoneNumber bin/LinkedListCycle bin/LinkedListCycleII bin/LongestCommonPrefix bin/LongestConsecutiveSequence bin/LongestPalindromicSubstring bin/LongestSubstringWithoutRepeatingCharacters bin/LongestValidParentheses bin/MajorityElement bin/MaxPointsonaLine bin/MaximalRectangle bin/MaximumDepthofBinaryTree bin/MaximumGap bin/MaximumProductSubarray bin/MaximumSubarray bin/MedianofTwoSortedArrays bin/MergeIntervals bin/MergeSortedArray bin/MergeTwoSortedLists bin/MergekSortedLists bin/MinStack bin/MinimumDepthofBinaryTree bin/MinimumPathSum bin/MinimumWindowSubstring bin/MultiplyStrings bin/N-Queens bin/N-QueensII bin/NextPermutation bin/Numberof1Bits bin/PalindromeNumber bin/PalindromePartitioning bin/PalindromePartitioningII bin/PartitionList bin/PascalTriangle bin/PascalTriangleII bin/PathSum bin/PathSumII bin/PermutationSequence bin/Permutations bin/PermutationsII bin/PlusOne bin/PopulatingNextRightPointersinEachNode bin/PopulatingNextRightPointersinEachNodeII bin/Powxn bin/RecoverBinarySearchTree bin/RegularExpressionMatching bin/RemoveDuplicatesfromSortedArray bin/RemoveDuplicatesfromSortedArrayII bin/RemoveDuplicatesfromSortedList bin/RemoveDuplicatesfromSortedListII bin/RemoveElement bin/RemoveNthNodeFromEndofList bin/ReorderList bin/RepeatedDNASequences bin/RestoreIPAddresses bin/ReverseBits bin/ReverseInteger bin/ReverseLinkedListII bin/ReverseNodesink-Group bin/ReverseWordsinaString bin/RomantoInteger bin/RotateArray bin/RotateImage bin/RotateList bin/SameTree bin/ScrambleString bin/SearchInsertPosition bin/Searcha2DMatrix bin/SearchforaRange bin/SearchinRotatedSortedArray bin/SearchinRotatedSortedArrayII bin/SetMatrixZeroes bin/SimplifyPath bin/SingleNumber bin/SingleNumberII bin/SortColors bin/SortList bin/SpiralMatrix bin/SpiralMatrixII bin/Sqrtx bin/StringtoInteger_atoi bin/Subsets bin/SubsetsII bin/SubstringwithConcatenationofAllWords bin/SudokuSolver bin/SumRoottoLeafNumbers bin/SurroundedRegions bin/SwapNodesinPairs bin/SymmetricTree bin/TextJustification bin/TrappingRainWater bin/Triangle bin/TwoSum bin/UniqueBinarySearchTrees bin/UniqueBinarySearchTreesII bin/UniquePaths bin/UniquePathsII bin/ValidNumber bin/ValidPalindrome bin/ValidParentheses bin/ValidSudoku bin/ValidateBinarySearchTree bin/WildcardMatching bin/WordBreak bin/WordBreakII bin/WordLadder bin/WordLadderII bin/WordSearch bin/ZigZagConversion 
 .PHONY:all
 
-.PHONY:3SumClosest
-bin/3SumClosest : 3SumClosest.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:3Sum
 bin/3Sum : 3Sum.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:3SumClosest
+bin/3SumClosest : 3SumClosest.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:4Sum
 bin/4Sum : 4Sum.cpp ../common.h
@@ -71,14 +71,14 @@ bin/ClimbingStairs : ClimbingStairs.cpp ../common.h
 .PHONY:CloneGraph
 bin/CloneGraph : CloneGraph.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:Combinations
-bin/Combinations : Combinations.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:CombinationSum
 bin/CombinationSum : CombinationSum.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:CombinationSumII
 bin/CombinationSumII : CombinationSumII.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:Combinations
+bin/Combinations : Combinations.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:CompareVersionNumbers
 bin/CompareVersionNumbers : CompareVersionNumbers.cpp ../common.h
@@ -179,6 +179,9 @@ bin/JumpGame : JumpGame.cpp ../common.h
 .PHONY:JumpGameII
 bin/JumpGameII : JumpGameII.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:LRUCache
+bin/LRUCache : LRUCache.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:LargestNumber
 bin/LargestNumber : LargestNumber.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
@@ -212,11 +215,11 @@ bin/LongestSubstringWithoutRepeatingCharacters : LongestSubstringWithoutRepeatin
 .PHONY:LongestValidParentheses
 bin/LongestValidParentheses : LongestValidParentheses.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:LRUCache
-bin/LRUCache : LRUCache.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:MajorityElement
 bin/MajorityElement : MajorityElement.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:MaxPointsonaLine
+bin/MaxPointsonaLine : MaxPointsonaLine.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:MaximalRectangle
 bin/MaximalRectangle : MaximalRectangle.cpp ../common.h
@@ -233,23 +236,23 @@ bin/MaximumProductSubarray : MaximumProductSubarray.cpp ../common.h
 .PHONY:MaximumSubarray
 bin/MaximumSubarray : MaximumSubarray.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:MaxPointsonaLine
-bin/MaxPointsonaLine : MaxPointsonaLine.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:MedianofTwoSortedArrays
 bin/MedianofTwoSortedArrays : MedianofTwoSortedArrays.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:MergeIntervals
 bin/MergeIntervals : MergeIntervals.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:MergekSortedLists
-bin/MergekSortedLists : MergekSortedLists.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:MergeSortedArray
 bin/MergeSortedArray : MergeSortedArray.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:MergeTwoSortedLists
 bin/MergeTwoSortedLists : MergeTwoSortedLists.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:MergekSortedLists
+bin/MergekSortedLists : MergekSortedLists.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:MinStack
+bin/MinStack : MinStack.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:MinimumDepthofBinaryTree
 bin/MinimumDepthofBinaryTree : MinimumDepthofBinaryTree.cpp ../common.h
@@ -260,20 +263,17 @@ bin/MinimumPathSum : MinimumPathSum.cpp ../common.h
 .PHONY:MinimumWindowSubstring
 bin/MinimumWindowSubstring : MinimumWindowSubstring.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:MinStack
-bin/MinStack : MinStack.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:MultiplyStrings
 bin/MultiplyStrings : MultiplyStrings.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:NextPermutation
-bin/NextPermutation : NextPermutation.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:N-Queens
 bin/N-Queens : N-Queens.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:N-QueensII
 bin/N-QueensII : N-QueensII.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:NextPermutation
+bin/NextPermutation : NextPermutation.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:Numberof1Bits
 bin/Numberof1Bits : Numberof1Bits.cpp ../common.h
@@ -302,11 +302,11 @@ bin/PathSum : PathSum.cpp ../common.h
 .PHONY:PathSumII
 bin/PathSumII : PathSumII.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:Permutations
-bin/Permutations : Permutations.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:PermutationSequence
 bin/PermutationSequence : PermutationSequence.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:Permutations
+bin/Permutations : Permutations.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:PermutationsII
 bin/PermutationsII : PermutationsII.cpp ../common.h
@@ -389,6 +389,9 @@ bin/SameTree : SameTree.cpp ../common.h
 .PHONY:ScrambleString
 bin/ScrambleString : ScrambleString.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:SearchInsertPosition
+bin/SearchInsertPosition : SearchInsertPosition.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:Searcha2DMatrix
 bin/Searcha2DMatrix : Searcha2DMatrix.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
@@ -400,9 +403,6 @@ bin/SearchinRotatedSortedArray : SearchinRotatedSortedArray.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:SearchinRotatedSortedArrayII
 bin/SearchinRotatedSortedArrayII : SearchinRotatedSortedArrayII.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:SearchInsertPosition
-bin/SearchInsertPosition : SearchInsertPosition.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:SetMatrixZeroes
 bin/SetMatrixZeroes : SetMatrixZeroes.cpp ../common.h
@@ -482,9 +482,6 @@ bin/UniquePaths : UniquePaths.cpp ../common.h
 .PHONY:UniquePathsII
 bin/UniquePathsII : UniquePathsII.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
-.PHONY:ValidateBinarySearchTree
-bin/ValidateBinarySearchTree : ValidateBinarySearchTree.cpp ../common.h
-	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:ValidNumber
 bin/ValidNumber : ValidNumber.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
@@ -496,6 +493,9 @@ bin/ValidParentheses : ValidParentheses.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:ValidSudoku
 bin/ValidSudoku : ValidSudoku.cpp ../common.h
+	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
+.PHONY:ValidateBinarySearchTree
+bin/ValidateBinarySearchTree : ValidateBinarySearchTree.cpp ../common.h
 	$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 .PHONY:WildcardMatching
 bin/WildcardMatching : WildcardMatching.cpp ../common.h
@@ -522,8 +522,8 @@ bin/ZigZagConversion : ZigZagConversion.cpp ../common.h
 .PHONY:clean
     clean:
 	-rm -f bin/*
-	-rm -rf 3SumClosest.o 3SumClosest 3SumClosest.dSYM 
 	-rm -rf 3Sum.o 3Sum 3Sum.dSYM 
+	-rm -rf 3SumClosest.o 3SumClosest 3SumClosest.dSYM 
 	-rm -rf 4Sum.o 4Sum 4Sum.dSYM 
 	-rm -rf AddBinary.o AddBinary AddBinary.dSYM 
 	-rm -rf AddTwoNumbers.o AddTwoNumbers AddTwoNumbers.dSYM 
@@ -544,9 +544,9 @@ bin/ZigZagConversion : ZigZagConversion.cpp ../common.h
 	-rm -rf Candy.o Candy Candy.dSYM 
 	-rm -rf ClimbingStairs.o ClimbingStairs ClimbingStairs.dSYM 
 	-rm -rf CloneGraph.o CloneGraph CloneGraph.dSYM 
-	-rm -rf Combinations.o Combinations Combinations.dSYM 
 	-rm -rf CombinationSum.o CombinationSum CombinationSum.dSYM 
 	-rm -rf CombinationSumII.o CombinationSumII CombinationSumII.dSYM 
+	-rm -rf Combinations.o Combinations Combinations.dSYM 
 	-rm -rf CompareVersionNumbers.o CompareVersionNumbers CompareVersionNumbers.dSYM 
 	-rm -rf ConstructBinaryTreefromInorderandPostorderTraversal.o ConstructBinaryTreefromInorderandPostorderTraversal ConstructBinaryTreefromInorderandPostorderTraversal.dSYM 
 	-rm -rf ConstructBinaryTreefromPreorderandInorderTraversal.o ConstructBinaryTreefromPreorderandInorderTraversal ConstructBinaryTreefromPreorderandInorderTraversal.dSYM 
@@ -580,6 +580,7 @@ bin/ZigZagConversion : ZigZagConversion.cpp ../common.h
 	-rm -rf IntersectionofTwoLinkedLists.o IntersectionofTwoLinkedLists IntersectionofTwoLinkedLists.dSYM 
 	-rm -rf JumpGame.o JumpGame JumpGame.dSYM 
 	-rm -rf JumpGameII.o JumpGameII JumpGameII.dSYM 
+	-rm -rf LRUCache.o LRUCache LRUCache.dSYM 
 	-rm -rf LargestNumber.o LargestNumber LargestNumber.dSYM 
 	-rm -rf LargestRectangleinHistogram.o LargestRectangleinHistogram LargestRectangleinHistogram.dSYM 
 	-rm -rf LengthofLastWord.o LengthofLastWord LengthofLastWord.dSYM 
@@ -591,27 +592,26 @@ bin/ZigZagConversion : ZigZagConversion.cpp ../common.h
 	-rm -rf LongestPalindromicSubstring.o LongestPalindromicSubstring LongestPalindromicSubstring.dSYM 
 	-rm -rf LongestSubstringWithoutRepeatingCharacters.o LongestSubstringWithoutRepeatingCharacters LongestSubstringWithoutRepeatingCharacters.dSYM 
 	-rm -rf LongestValidParentheses.o LongestValidParentheses LongestValidParentheses.dSYM 
-	-rm -rf LRUCache.o LRUCache LRUCache.dSYM 
 	-rm -rf MajorityElement.o MajorityElement MajorityElement.dSYM 
+	-rm -rf MaxPointsonaLine.o MaxPointsonaLine MaxPointsonaLine.dSYM 
 	-rm -rf MaximalRectangle.o MaximalRectangle MaximalRectangle.dSYM 
 	-rm -rf MaximumDepthofBinaryTree.o MaximumDepthofBinaryTree MaximumDepthofBinaryTree.dSYM 
 	-rm -rf MaximumGap.o MaximumGap MaximumGap.dSYM 
 	-rm -rf MaximumProductSubarray.o MaximumProductSubarray MaximumProductSubarray.dSYM 
 	-rm -rf MaximumSubarray.o MaximumSubarray MaximumSubarray.dSYM 
-	-rm -rf MaxPointsonaLine.o MaxPointsonaLine MaxPointsonaLine.dSYM 
 	-rm -rf MedianofTwoSortedArrays.o MedianofTwoSortedArrays MedianofTwoSortedArrays.dSYM 
 	-rm -rf MergeIntervals.o MergeIntervals MergeIntervals.dSYM 
-	-rm -rf MergekSortedLists.o MergekSortedLists MergekSortedLists.dSYM 
 	-rm -rf MergeSortedArray.o MergeSortedArray MergeSortedArray.dSYM 
 	-rm -rf MergeTwoSortedLists.o MergeTwoSortedLists MergeTwoSortedLists.dSYM 
+	-rm -rf MergekSortedLists.o MergekSortedLists MergekSortedLists.dSYM 
+	-rm -rf MinStack.o MinStack MinStack.dSYM 
 	-rm -rf MinimumDepthofBinaryTree.o MinimumDepthofBinaryTree MinimumDepthofBinaryTree.dSYM 
 	-rm -rf MinimumPathSum.o MinimumPathSum MinimumPathSum.dSYM 
 	-rm -rf MinimumWindowSubstring.o MinimumWindowSubstring MinimumWindowSubstring.dSYM 
-	-rm -rf MinStack.o MinStack MinStack.dSYM 
 	-rm -rf MultiplyStrings.o MultiplyStrings MultiplyStrings.dSYM 
-	-rm -rf NextPermutation.o NextPermutation NextPermutation.dSYM 
 	-rm -rf N-Queens.o N-Queens N-Queens.dSYM 
 	-rm -rf N-QueensII.o N-QueensII N-QueensII.dSYM 
+	-rm -rf NextPermutation.o NextPermutation NextPermutation.dSYM 
 	-rm -rf Numberof1Bits.o Numberof1Bits Numberof1Bits.dSYM 
 	-rm -rf PalindromeNumber.o PalindromeNumber PalindromeNumber.dSYM 
 	-rm -rf PalindromePartitioning.o PalindromePartitioning PalindromePartitioning.dSYM 
@@ -621,8 +621,8 @@ bin/ZigZagConversion : ZigZagConversion.cpp ../common.h
 	-rm -rf PascalTriangleII.o PascalTriangleII PascalTriangleII.dSYM 
 	-rm -rf PathSum.o PathSum PathSum.dSYM 
 	-rm -rf PathSumII.o PathSumII PathSumII.dSYM 
-	-rm -rf Permutations.o Permutations Permutations.dSYM 
 	-rm -rf PermutationSequence.o PermutationSequence PermutationSequence.dSYM 
+	-rm -rf Permutations.o Permutations Permutations.dSYM 
 	-rm -rf PermutationsII.o PermutationsII PermutationsII.dSYM 
 	-rm -rf PlusOne.o PlusOne PlusOne.dSYM 
 	-rm -rf PopulatingNextRightPointersinEachNode.o PopulatingNextRightPointersinEachNode PopulatingNextRightPointersinEachNode.dSYM 
@@ -650,11 +650,11 @@ bin/ZigZagConversion : ZigZagConversion.cpp ../common.h
 	-rm -rf RotateList.o RotateList RotateList.dSYM 
 	-rm -rf SameTree.o SameTree SameTree.dSYM 
 	-rm -rf ScrambleString.o ScrambleString ScrambleString.dSYM 
+	-rm -rf SearchInsertPosition.o SearchInsertPosition SearchInsertPosition.dSYM 
 	-rm -rf Searcha2DMatrix.o Searcha2DMatrix Searcha2DMatrix.dSYM 
 	-rm -rf SearchforaRange.o SearchforaRange SearchforaRange.dSYM 
 	-rm -rf SearchinRotatedSortedArray.o SearchinRotatedSortedArray SearchinRotatedSortedArray.dSYM 
 	-rm -rf SearchinRotatedSortedArrayII.o SearchinRotatedSortedArrayII SearchinRotatedSortedArrayII.dSYM 
-	-rm -rf SearchInsertPosition.o SearchInsertPosition SearchInsertPosition.dSYM 
 	-rm -rf SetMatrixZeroes.o SetMatrixZeroes SetMatrixZeroes.dSYM 
 	-rm -rf SimplifyPath.o SimplifyPath SimplifyPath.dSYM 
 	-rm -rf SingleNumber.o SingleNumber SingleNumber.dSYM 
@@ -681,11 +681,11 @@ bin/ZigZagConversion : ZigZagConversion.cpp ../common.h
 	-rm -rf UniqueBinarySearchTreesII.o UniqueBinarySearchTreesII UniqueBinarySearchTreesII.dSYM 
 	-rm -rf UniquePaths.o UniquePaths UniquePaths.dSYM 
 	-rm -rf UniquePathsII.o UniquePathsII UniquePathsII.dSYM 
-	-rm -rf ValidateBinarySearchTree.o ValidateBinarySearchTree ValidateBinarySearchTree.dSYM 
 	-rm -rf ValidNumber.o ValidNumber ValidNumber.dSYM 
 	-rm -rf ValidPalindrome.o ValidPalindrome ValidPalindrome.dSYM 
 	-rm -rf ValidParentheses.o ValidParentheses ValidParentheses.dSYM 
 	-rm -rf ValidSudoku.o ValidSudoku ValidSudoku.dSYM 
+	-rm -rf ValidateBinarySearchTree.o ValidateBinarySearchTree ValidateBinarySearchTree.dSYM 
 	-rm -rf WildcardMatching.o WildcardMatching WildcardMatching.dSYM 
 	-rm -rf WordBreak.o WordBreak WordBreak.dSYM 
 	-rm -rf WordBreakII.o WordBreakII WordBreakII.dSYM 

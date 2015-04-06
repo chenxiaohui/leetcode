@@ -2,4 +2,7 @@
 *.swp
 leetcode/bin
 lintcode/bin
-lintcode/bin
+leetcode/Makefile
+lintcode/Makefile
+leetcode/README.md
+lintcode/README.md
