@@ -5,13 +5,12 @@ MaximumDepthofBinaryTree
 Permutations
 RemoveElement
 SameTree
+SearchInsertPosition
 SearchforaRange
 SearchinRotatedSortedArray
 SearchinRotatedSortedArrayII
-SearchInsertPosition
 SingleNumber
 SingleNumberII
-strStr
-test
 UniqueSubsets
 ValidParentheses
+strStr
