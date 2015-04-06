@@ -1,5 +1,5 @@
-*
-!*.md
-!*.h
-!*.cpp
-!*.sh
+*.o
+*.swp
+leetcode/bin
+lintcode/bin
+lintcode/bin

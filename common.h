@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <stack>
 #include <gtest/gtest.h>
-
+ 
 using namespace std;
 #define n(A) sizeof(A)/sizeof(int)
 
