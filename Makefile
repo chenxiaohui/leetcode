@@ -2,12 +2,12 @@
 
 CXXFLAGS += -isystem $(GTEST_DIR)/include -g -Wall -Wextra -pthread
 
-all: SearchinRotatedSortedArrayII 
+all: * 
 .PHONY:all
 
-SearchinRotatedSortedArrayII : SearchinRotatedSortedArrayII.cpp common.h
+* : *.cpp common.h
 	$(CXX) $(CXXFLAGS) -lpthread -L$(GTEST_DIR) -lgtest_main $< -o $@
 
 .PHONY:clean
 clean:
-	-rm -rf SearchinRotatedSortedArrayII.o SearchinRotatedSortedArrayII SearchinRotatedSortedArrayII.dSYM 
+	-rm -rf *.o * *.dSYM 
