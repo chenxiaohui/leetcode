@@ -24,7 +24,7 @@ public:
      * @param A: An integers array.
      * @return: return any of peek positions.
      */
-    int findPeak(vector<int> A) {
+    int findPeakSimple(vector<int> A) {
       int ret = -1;
       if (A.size() > 1) {
         for (int i = 1; i < static_cast<int>(A.size()) - 1; i++) {
@@ -38,12 +38,38 @@ public:
       }
       return ret;
     }
+    int findPeak(vector<int> A) {
+      int ret = -1;
+      if (A.size() > 1) {
+        int beg = 0;
+        int end = A.size() - 1;
+        while (beg + 1 < end) {
+          int mid = beg + (end - beg) / 2;
+          if (A[mid - 1] > A[mid] && A[mid] > A[mid + 1]) {
+            end = mid;
+          } else if (A[mid - 1] < A[mid] && A[mid] < A[mid + 1]) {
+            beg = mid;
+          } else if (A[mid - 1] > A[mid] && A[mid + 1] > A[mid]) {
+            beg = mid;  // whatever
+          } else {
+            ret = mid;
+            break;
+          }
+        }
+        if (ret == -1) {
+          ret = (A[beg] > A[end]) ? beg : end;
+        }
+      } else if (A.size() == 1) {
+        ret = 0;
+      }
+      return ret;
+    }
 };
 Solution s;
 
 TEST(FindPeakElement, normal) {
   vector<int> A = {1,2,1,3,4,5,7,6};
-  EXPECT_EQ(1, s.findPeak(A));
+  EXPECT_EQ(6, s.findPeak(A));
 }
 TEST(FindPeakElement, empty)
 {
@@ -52,7 +78,11 @@ TEST(FindPeakElement, empty)
   A.push_back(1);
   EXPECT_EQ(0, s.findPeak(A));
 }
-TEST(FindPeakElement, flat) {
-  vector<int> A = {1,2,2,1,3,4,5,7,6};
-  EXPECT_EQ(7, s.findPeak(A));
+TEST(FindPeakElement, singleIncrease) {
+  vector<int> A = {1,2,3,4,5,7,8};
+  EXPECT_EQ(6, s.findPeak(A));
+}
+TEST(FindPeakElement, singleDecrease) {
+  vector<int> A = {8,7,5,4,3,2,1};
+  EXPECT_EQ(0, s.findPeak(A));
 }
