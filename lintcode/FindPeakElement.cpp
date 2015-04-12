@@ -20,9 +20,39 @@ Time complexity O(logN)
 
 class Solution {
 public:
-
+    /**
+     * @param A: An integers array.
+     * @return: return any of peek positions.
+     */
+    int findPeak(vector<int> A) {
+      int ret = -1;
+      if (A.size() > 1) {
+        for (int i = 1; i < static_cast<int>(A.size()) - 1; i++) {
+          if (A[i] > A[i - 1] && A[i] > A[i + 1]) {
+            ret = i;
+            break;
+          }
+        }
+      } else if (A.size() == 1) {
+        ret = 0;
+      }
+      return ret;
+    }
 };
 Solution s;
 
 TEST(FindPeakElement, normal) {
+  vector<int> A = {1,2,1,3,4,5,7,6};
+  EXPECT_EQ(1, s.findPeak(A));
+}
+TEST(FindPeakElement, empty)
+{
+  vector<int> A;
+  EXPECT_EQ(-1, s.findPeak(A));
+  A.push_back(1);
+  EXPECT_EQ(0, s.findPeak(A));
+}
+TEST(FindPeakElement, flat) {
+  vector<int> A = {1,2,2,1,3,4,5,7,6};
+  EXPECT_EQ(7, s.findPeak(A));
 }
