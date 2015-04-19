@@ -3,6 +3,9 @@
 leetcode/bin
 lintcode/bin
 leetcode/Makefile
-lintcode/Makefile
 leetcode/README.md
+lintcode/Makefile
 lintcode/README.md
+others/bin
+others/Makefile
+others/README.md

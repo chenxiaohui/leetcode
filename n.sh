@@ -18,22 +18,19 @@
 #===============================================================================
 
 set -o nounset                              # Treat unset variables as an error
-
-echo "copy your leetcode problem title: "
+[ -f /usr/bin/pbpaste ] && copycmd='pbpaste'
+[ -f /usr/bin/xclip ] && copycmd='xclip -o selection clipboard'
+echo "copy or type your problem title: "
 read title
-[ -z $title ] && title=`xclip -o -selection clipboard`
-echo "copy description to clipboard: "
+[ -z "$title "] && title=`$copycmd`
+echo "copy or type description:"
 read desc
-[ -z $desc ] && desc=`xclip -o -selection clipboard`
-echo "copy note to clipboard: "
-read note
-[ -z $note ] && note=`xclip -o -selection clipboard`
+[ -z "$desc "] && desc=`$copycmd`
 
-filename=`echo $title|tr -d ' '`
-echo '/*' > $filename.cpp
-echo " * " $desc >> $filename.cpp
-echo " * Note:" $note >> $filename.cpp
-echo ' */' >> $filename.cpp
+cppfilename=others/`echo $title|tr -d ' '`.cpp
+echo '/*' > $cppfilename
+echo " * " $desc >> $cppfilename
+echo ' */' >> $cppfilename
 echo '#include "common.h"
 
 class Solution {
@@ -41,8 +38,9 @@ public:
 
 };
 Solution s;
-' >> $filename.cpp
+' >> $cppfilename
 
+mdfilename=md/`echo $title|tr -d ' '`.md
 echo "### 总结
 
 
@@ -54,8 +52,8 @@ echo "### 总结
 ### 扩展
 
 
-">md/$filename.md
+">$mdfilename
 ./gen.sh
 
-LD_PRELOAD=~/repo/scripts/libsublime-imfix.so nohup ~/share/sublime/sublime_text md/$filename.md > /dev/null 2>&1 &
-vi $filename.cpp
+sublime $mdfilename
+vi $cppfilename
