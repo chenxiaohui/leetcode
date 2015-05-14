@@ -4,6 +4,7 @@
 all: common.h
 	$(MAKE) -C leetcode
 	$(MAKE) -C lintcode
+	$(MAKE) -C others
 
 .PHONY:clean
 clean:

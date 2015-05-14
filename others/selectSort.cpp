@@ -5,7 +5,7 @@
 
 class Solution {
 public:
-  void insertSort(int A[], int n) {
+  void selectSort(int A[], int n) {
     if (n <= 1) {
       return;
     }
@@ -25,30 +25,30 @@ public:
   }
 };
 Solution s;
-TEST(insertSort, normal) {
+TEST(selectSort, normal) {
   int A[] = {5,4,3,2,1};
   int B[] = {1,2,3,4,5};
-  s.insertSort(A, n(A));
+  s.selectSort(A, n(A));
   EXPECT_TRUE(equal(A, n(A), B, n(B)));
 }
-TEST(insertSort, equal) {
+TEST(selectSort, equal) {
   int A[] = {5,3,3,3,1};
   int B[] = {1,3,3,3,5};
-  s.insertSort(A, n(A));
+  s.selectSort(A, n(A));
   EXPECT_TRUE(equal(A, n(A), B, n(B)));
 }
 
-TEST(insertSort, single) {
+TEST(selectSort, single) {
   int A[] = {5};
   int B[] = {5};
-  s.insertSort(A, n(A));
+  s.selectSort(A, n(A));
   EXPECT_TRUE(equal(A, n(A), B, n(B)));
 }
 
-TEST(insertSort, empty) {
+TEST(selectSort, empty) {
   int A[] = {};
   int B[] = {};
-  s.insertSort(A, n(A));
+  s.selectSort(A, n(A));
   EXPECT_TRUE(equal(A, n(A), B, n(B)));
 }
 
