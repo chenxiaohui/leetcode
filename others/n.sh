@@ -27,7 +27,7 @@ echo "copy or type description:"
 read desc
 [ -z "$desc" ] && desc=`$copycmd`
 
-cppfilename=others/`echo $title|tr -d ' '`.cpp
+cppfilename=`echo $title|tr -d ' '`.cpp
 echo '/*' > $cppfilename
 echo " * " $desc >> $cppfilename
 echo ' */' >> $cppfilename
@@ -40,7 +40,7 @@ public:
 Solution s;
 ' >> $cppfilename
 
-mdfilename=md/`echo $title|tr -d ' '`.md
+mdfilename=../md/`echo $title|tr -d ' '`.md
 echo "### 总结
 
 
@@ -53,7 +53,8 @@ echo "### 总结
 
 
 ">$mdfilename
-./gen.sh
+
+cd .. && ./gen.sh && cd others
 
 sublime $mdfilename
 vi $cppfilename
