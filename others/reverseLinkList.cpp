@@ -19,15 +19,15 @@ public:
   }
   void reverse2(LinkList & list) {
     LinkList p = list;
-    LinkList q = NULL;
     LinkList r = NULL;
+    LinkList ret = NULL;
     while (p != NULL) {
-      r = q;
-      q = p;
+      r = p;
       p = p->next;
-      q->next = r;
+      r->next = ret;
+      ret = r;
     }
-    list = q;
+    list = ret;
   }
 };
 
