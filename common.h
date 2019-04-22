@@ -1,8 +1,4 @@
-#include <iostream>
-#include <iterator>
-#include <algorithm>
-#include <stack>
-#include <string>
+#include <stdc++.h>
 #include <gtest/gtest.h>
 
 using namespace std;
@@ -39,6 +35,7 @@ bool equal(const T* A, int na, const T* B, int nb) {
   }
   return ret;
 }
+
 template<typename T>
 void print(const vector<T>& ve){
    cout << "[";
@@ -56,7 +53,9 @@ void print(const T *ar, int n){
 typedef struct _LinkNode {
   int val;
   struct _LinkNode * next;
-} LinkNode, * LinkList;
+  _LinkNode() {}
+  _LinkNode(int x) : val(x), next(NULL) {}
+} ListNode, * LinkList;
 
 LinkList createLinkList(int a[], int n) {
   LinkList ret = NULL;
@@ -64,7 +63,7 @@ LinkList createLinkList(int a[], int n) {
   LinkList r = NULL;
   if (n > 0) {
     for (int i = 0; i < n; i++) {
-      p = (LinkList)malloc(sizeof(LinkNode));
+      p = (LinkList)malloc(sizeof(ListNode));
       p->next = NULL;
       p->val = a[i];
       if (ret == NULL) {
@@ -88,6 +87,26 @@ void print(LinkList list) {
     p = p->next;
   }
   cout << endl;
+}
+
+LinkList createLinkList(vector<int>& ve) {
+  LinkList ret = NULL;
+  LinkList p = NULL;
+  LinkList r = NULL;
+  if (ve.size() > 0) {
+    for (size_t i = 0; i < ve.size(); i++) {
+      p = (LinkList)malloc(sizeof(ListNode));
+      p->next = NULL;
+      p->val = ve[i];
+      if (ret == NULL) {
+        ret = p;
+      } else {
+        r->next = p;
+      }
+      r = p;
+    }
+  }
+  return ret;
 }
 
 bool equal(LinkList lista, LinkList listb) {

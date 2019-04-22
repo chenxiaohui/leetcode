@@ -6,7 +6,9 @@ Given a non-negative number represented as an array of digits, plus one to the n
 
 class Solution {
 public:
-
+    vector<int> plusOne(vector<int>& digits) {
+        
+    }
 };
 Solution s;
 
