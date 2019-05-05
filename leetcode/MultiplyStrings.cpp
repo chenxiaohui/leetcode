@@ -7,6 +7,9 @@ Given two numbers represented as strings, return multiplication of the numbers a
 class Solution {
 public:
 
+  string multiply(string num1, string num2) {
+  }
+
 };
 Solution s;
 
