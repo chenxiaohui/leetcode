@@ -26,10 +26,10 @@ genMakefile() {
     echo 'CXXFLAGS += -std=c++1y -isystem $(GTEST_DIR)/include -g -Wall -Wextra -pthread' >> Makefile
     echo "" >> Makefile
 
-    echo -n "all: " >>Makefile
+    echo "all: " >>Makefile
     for fname in *.cpp; do
         realname=${fname%.*}
-        echo -n "bin/$realname " >>Makefile
+        echo  "bin/$realname " >>Makefile
     done
 
     echo "" >>Makefile
@@ -40,17 +40,17 @@ genMakefile() {
         realname=${fname%.*}
         echo ".PHONY:$realname" >>Makefile
         echo "bin/$realname : $fname ../common.h" >> Makefile
-        echo -e "\t"'$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main -lgtest $< -o $@' >>Makefile
+        echo "\t"'$(CXX) $(CXXFLAGS) -I.. -lpthread -L$(GTEST_DIR) -lgtest_main -lgtest $< -o $@' >>Makefile
     done
 
     echo "" >> Makefile
     echo ".PHONY:clean
     clean:" >> Makefile
 
-    echo -e "\t-rm -f bin/*" >> Makefile
+    echo "\t-rm -f bin/*" >> Makefile
     for fname in *.cpp; do
         realname=${fname%.*}
-        echo -e "\t-rm -rf ${realname}.o $realname ${realname}.dSYM " >> Makefile
+        echo "\t-rm -rf ${realname}.o $realname ${realname}.dSYM " >> Makefile
     done
 
     echo "My algorithm answers: " > README.md

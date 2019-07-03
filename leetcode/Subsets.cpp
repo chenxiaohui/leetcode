@@ -27,9 +27,30 @@ If S = [1,2,3], a solution is:
 
 class Solution {
 public:
+    vector<vector<int>> getSubsets(vector<int> &subset) {
+        vector<vector<int>> res;
+        vector<int> last;
+        res.push_back(last);
+        for (int i = 0; i < subset.size(); i++) {
+            res.push_back(vector<int>(subset[i]));
+            int size = res.size();
+            for (int j = 0; j < size; j++) {
+                res.push_back(res[j]);
+                res.back.push_back(subset[i]);
+            }
+        }
+        return res;
+    }
 
 };
 Solution s;
 
 TEST(Subsets, normal) {
+    vector<int> subset = {1,2,3};
+    auto res = s.getSubsets(subset);
+    for (auto& vec : res) {
+        for (auto& element : vec) {
+            cout<< element << " " << endl;
+        }
+    }
 }
