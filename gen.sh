@@ -26,10 +26,10 @@ genMakefile() {
     echo 'CXXFLAGS += -std=c++1y -isystem $(GTEST_DIR)/include -g -Wall -Wextra -pthread' >> Makefile
     echo "" >> Makefile
 
-    echo "all: " >>Makefile
+    echo "all: \\" >>Makefile
     for fname in *.cpp; do
         realname=${fname%.*}
-        echo  "bin/$realname " >>Makefile
+        echo   "bin/$realname \\" >>Makefile
     done
 
     echo "" >>Makefile

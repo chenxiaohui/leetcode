@@ -31,12 +31,12 @@ public:
         vector<vector<int>> res;
         vector<int> last;
         res.push_back(last);
-        for (int i = 0; i < subset.size(); i++) {
+        for (size_t i = 0; i < subset.size(); i++) {
             res.push_back(vector<int>(subset[i]));
-            int size = res.size();
-            for (int j = 0; j < size; j++) {
+            size_t size = res.size();
+            for (size_t j = 0; j < size; j++) {
                 res.push_back(res[j]);
-                res.back.push_back(subset[i]);
+                res.back().push_back(subset[i]);
             }
         }
         return res;
